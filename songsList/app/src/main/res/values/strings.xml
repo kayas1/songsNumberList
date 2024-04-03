@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">노래방</string>
+    <string name="title">곡명</string>
+    <string name="tj">tj노래방 번호</string>
+    <string name="ky">ky노래방 번호</string>
+    <string name="save">저장</string>
+    <string name="cancel">취소</string>
+    <string name="del">삭제</string>
+    <string name="plus">추가</string>
+    <string name="info">추가 정보</string>
+    <string name="category">분류</string>
+    <string name="radioKr">한국어</string>
+    <string name="radioEn">영어</string>
+    <string name="radioJp">일본어</string>
+    <string name="radioOthers">기타</string>
+    <string name="radioAll">전체</string>
+</resources>

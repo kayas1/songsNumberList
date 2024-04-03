@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SongAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="NestedWeights">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/title"
+                    android:textColor="#808080"
+                    android:textSize="30sp"
+                    android:textStyle="" />
+
+                <EditText
+                    android:id="@+id/songTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingStart="20dp"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/tjTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/tj"
+                    android:textColor="#808080"
+                    android:textSize="30sp"
+                    android:textStyle="" />
+
+                <EditText
+                    android:id="@+id/tjNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:maxLength="5"
+                    tools:ignore="LabelFor" />
+
+                <TextView
+                    android:id="@+id/kyTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/ky"
+                    android:textColor="#808080"
+                    android:textSize="30sp"
+                    android:textStyle="" />
+
+                <EditText
+                    android:id="@+id/kyNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:maxLength="5"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    tools:ignore="LabelFor" />
+
+
+                <TextView
+                    android:id="@+id/categoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/category"
+                    android:textColor="#808080"
+                    android:textSize="30sp"
+                    android:textStyle="" />
+
+                <RadioGroup
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:checkedButton="@id/radioKr"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioKr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/radioKr" />
+
+                    <RadioButton
+                        android:id="@+id/radioEn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/radioEn" />
+
+                    <RadioButton
+                        android:id="@+id/radioJp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/radioJp" />
+
+                    <RadioButton
+                        android:id="@+id/radioOthers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/radioOthers" />
+
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/infoTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:labelFor="@+id/infoContent"
+                    android:paddingStart="20dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/info"
+                    android:textColor="#808080"
+                    android:textSize="30sp"
+                    android:textStyle="" />
+
+                <EditText
+                    android:id="@+id/infoContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:paddingStart="20dp"
+                    tools:ignore="LabelFor" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="20sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
